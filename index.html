@@ -1,8 +1,7 @@
 <!DOCTYPE html><html lang=en><head><meta charset=utf-8><script>(function(){
-      var redirect = sessionStorage.redirect;
-      console.log('from SS', redirect);
+      var redirect = sessionStorage.getItem('redirect');
 
-      delete sessionStorage.redirect;
+      sessionStorage.removeItem('redirect');;
       if (redirect && redirect != location.href) {
         history.replaceState(null, null, redirect);
       }
