@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang=en><head><meta charset=utf-8><script>(function(){
-      var redirect = sessionStorage.getItem('redirect');
+      var redirect = localStorage.getItem('redirect');
 
-      sessionStorage.removeItem('redirect');
+      localStorage.removeItem('redirect');
       console.log('redirect', redirect);
       if (redirect && redirect != location.href) {
         history.replaceState(null, null, redirect);
