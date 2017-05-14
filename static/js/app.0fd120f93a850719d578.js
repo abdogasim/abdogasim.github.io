@@ -15896,9 +15896,8 @@ const router = {
     path: '*',
     name: 'Error404Page',
     component: __WEBPACK_IMPORTED_MODULE_12__pages_Error404Page___default.a
-  }],
+  }]
 
-  mode: 'history'
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (router);
@@ -22646,4 +22645,4 @@ webpackContext.id = 333;
 
 /***/ })
 ],[178]);
-//# sourceMappingURL=app.157e80285a362619bbeb.js.map
+//# sourceMappingURL=app.0fd120f93a850719d578.js.map
