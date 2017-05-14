@@ -17999,12 +17999,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       const query = window.location.href.split('?')[1];
       const hasToken = /oauth_token=/.test(query);
       const hasVerifier = /oauth_verifier=/.test(query);
+      const isLogged = Object.keys(this.$store.getters.getUser).length > 0;
 
       let token;
       let secret;
       let user;
 
-      if (hasToken && hasVerifier) {
+      if (hasToken && hasVerifier && !isLogged) {
         this.$http.get(`https://mentions-api.herokuapp.com/auth/callback?${query}`).then(res => {
           token = res.body.token;
           secret = res.body.token_secret;
@@ -18035,7 +18036,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.$router.push('/500');
           }
 
-          return this.$store.dispatch('saveUserSettings', data.body);
+          return this.$store.dispatch('saveUserSettings', data.body.settings);
         }).then(() => {
           this.$router.push('/');
         }).catch(err => {
@@ -22608,4 +22609,4 @@ webpackContext.id = 333;
 
 /***/ })
 ],[178]);
-//# sourceMappingURL=app.15bf8c8429bc14333bfb.js.map
+//# sourceMappingURL=app.8af8e4cc0b9bdae9ca65.js.map
