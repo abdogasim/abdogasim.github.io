@@ -18130,6 +18130,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     if (hasQuery) {
       window.location.href = 'https://abdogasim.github.io/#/';
     }
+
+    next('/');
   }
 });
 
@@ -22616,4 +22618,4 @@ webpackContext.id = 333;
 
 /***/ })
 ],[178]);
-//# sourceMappingURL=app.80f9158d20e0c0394b7d.js.map
+//# sourceMappingURL=app.8d6024e8f413d3ba0a71.js.map
