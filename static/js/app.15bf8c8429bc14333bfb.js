@@ -21367,12 +21367,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "welcome__title"
   }, [_vm._v("Tweettoapp")]), _c('div', {
     staticClass: "welcome__label"
-  }, [_vm._v("makes Twitter a better place")]), (!_vm.isLogged) ? _c('router-link', {
+  }, [_vm._v("makes Twitter a better place")]), (!_vm.isLogged) ? _c('a', {
     class: ['welcome__link', {
       'welcome__link_visible': _vm.isLinkVisible
     }],
     attrs: {
-      "to": _vm.loginLink
+      "href": _vm.loginLink
     }
   }, [_vm._v("\n          Get started\n        ")]) : _c('router-link', {
     staticClass: "welcome__link welcome__link_visible",
@@ -22608,4 +22608,4 @@ webpackContext.id = 333;
 
 /***/ })
 ],[178]);
-//# sourceMappingURL=app.7ea1ace35dc3fbe36369.js.map
+//# sourceMappingURL=app.15bf8c8429bc14333bfb.js.map
