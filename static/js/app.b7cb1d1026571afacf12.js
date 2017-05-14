@@ -16931,10 +16931,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'HeaderComponent',
@@ -19947,8 +19943,6 @@ module.exports = Component.exports
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "page page_bg"
   }, [_c('div', {
@@ -19961,13 +19955,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "error__header"
   }, [_vm._v("404")]), _c('div', {
     staticClass: "error__text"
-  }, [_vm._v("This is not the page you are looking for...")]), _c('a', {
+  }, [_vm._v("This is not the page you are looking for...")]), _c('router-link', {
     staticClass: "error__link",
     attrs: {
-      "href": "/"
+      "to": "/"
     }
-  }, [_vm._v("Try to return to the main page")])])])])])
-}]}
+  }, [_vm._v("Try to return to the main page")])], 1)])])])
+},staticRenderFns: []}
 
 /***/ }),
 /* 265 */
@@ -20087,13 +20081,46 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "header"
   }, [_c('div', {
     staticClass: "header__container"
-  }, [_vm._m(0), _c('div', {
+  }, [_c('div', {
+    staticClass: "header__item"
+  }, [_c('router-link', {
+    staticClass: "link",
+    attrs: {
+      "to": "/"
+    }
+  }, [_c('img', {
+    staticClass: "link__image",
+    attrs: {
+      "src": __webpack_require__(13)
+    }
+  })])], 1), _c('div', {
     staticClass: "header__item"
   }, [_c('ul', {
     class: ['navigation', {
       'is-logged': _vm.isLogged
     }]
-  }, [_vm._m(1), _vm._m(2), _vm._m(3), _vm._m(4), _c('li', {
+  }, [_c('li', {
+    staticClass: "navigation__item"
+  }, [_c('router-link', {
+    staticClass: "navigation__link",
+    attrs: {
+      "to": "/landing"
+    }
+  }, [_vm._v("About")])], 1), _c('li', {
+    staticClass: "navigation__item navigation__item_logged"
+  }, [_c('router-link', {
+    staticClass: "navigation__link",
+    attrs: {
+      "to": "/posted"
+    }
+  }, [_vm._v("Posted")])], 1), _c('li', {
+    staticClass: "navigation__item navigation__item_logged"
+  }, [_c('router-link', {
+    staticClass: "navigation__link",
+    attrs: {
+      "to": "/notifications"
+    }
+  }, [_vm._v("Notifications")])], 1), _c('li', {
     staticClass: "navigation__item navigation__item_logged"
   }, [_c('div', {
     staticClass: "showcase"
@@ -20111,10 +20138,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     class: ['dropdown', {
       'is-expanded': _vm.isDropdownExpanded
     }]
-  }, [_c('a', {
+  }, [_c('router-link', {
     staticClass: "dropdown__toggler",
     attrs: {
-      "href": "javascript:;"
+      "to": "javascript:;"
     },
     on: {
       "click": _vm.expandDropdown
@@ -20137,59 +20164,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "src": __webpack_require__(226),
       "alt": "Hide"
     }
-  })]), _vm._m(5)])])])])])])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "header__item"
-  }, [_c('a', {
-    staticClass: "link",
-    attrs: {
-      "href": "/"
-    }
-  }, [_c('img', {
-    staticClass: "link__image",
-    attrs: {
-      "src": __webpack_require__(13)
-    }
-  })])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('li', {
-    staticClass: "navigation__item"
-  }, [_c('a', {
-    staticClass: "navigation__link",
-    attrs: {
-      "href": "/landing"
-    }
-  }, [_vm._v("About")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('li', {
-    staticClass: "navigation__item navigation__item_notlogged"
-  }, [_c('a', {
-    staticClass: "navigation__link",
-    attrs: {
-      "href": "/landing"
-    }
-  }, [_vm._v("Log in")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('li', {
-    staticClass: "navigation__item navigation__item_logged"
-  }, [_c('a', {
-    staticClass: "navigation__link",
-    attrs: {
-      "href": "/posted"
-    }
-  }, [_vm._v("Posted")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('li', {
-    staticClass: "navigation__item navigation__item_logged"
-  }, [_c('a', {
-    staticClass: "navigation__link",
-    attrs: {
-      "href": "/notifications"
-    }
-  }, [_vm._v("Notifications")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  })]), _c('div', {
     staticClass: "dropdown__container"
   }, [_c('span', {
     staticClass: "dropdown__spacer"
@@ -20197,33 +20172,33 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "menu menu_lifted"
   }, [_c('li', {
     staticClass: "menu__item"
-  }, [_c('a', {
+  }, [_c('router-link', {
     staticClass: "menu__link",
     attrs: {
-      "href": "/myprofile"
+      "to": "/myprofile"
     }
   }, [_c('span', {
     staticClass: "menu__title"
-  }, [_vm._v("My profile")])])]), _c('li', {
+  }, [_vm._v("My profile")])])], 1), _c('li', {
     staticClass: "menu__item"
-  }, [_c('a', {
+  }, [_c('router-link', {
     staticClass: "menu__link",
     attrs: {
-      "href": "/settings"
+      "to": "/settings"
     }
   }, [_c('span', {
     staticClass: "menu__title"
-  }, [_vm._v("Settings")])])]), _c('li', {
+  }, [_vm._v("Settings")])])], 1), _c('li', {
     staticClass: "menu__item"
-  }, [_c('a', {
+  }, [_c('router-link', {
     staticClass: "menu__link",
     attrs: {
-      "href": "/logout"
+      "to": "/logout"
     }
   }, [_c('span', {
     staticClass: "menu__title"
-  }, [_vm._v("Logout")])])])])])
-}]}
+  }, [_vm._v("Logout")])])], 1)])])], 1)])])])])])])])
+},staticRenderFns: []}
 
 /***/ }),
 /* 267 */
@@ -20304,9 +20279,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "page page_bg"
-  }, [_vm._m(0), _c('FooterComponent')], 1)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  }, [_c('div', {
     staticClass: "box"
   }, [_c('div', {
     staticClass: "error"
@@ -20314,13 +20287,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "error__header"
   }, [_vm._v("The page is under contruction")]), _c('div', {
     staticClass: "error__text"
-  }, [_vm._v("We will notify you when it is done")]), _c('a', {
+  }, [_vm._v("We will notify you when it is done")]), _c('router-link', {
     staticClass: "error__link",
     attrs: {
-      "href": "/"
+      "to": "/"
     }
-  }, [_vm._v("Try to return to the main page")])])])
-}]}
+  }, [_vm._v("Try to return to the main page")])], 1)]), _c('FooterComponent')], 1)
+},staticRenderFns: []}
 
 /***/ }),
 /* 271 */
@@ -20329,9 +20302,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "page page_bg"
-  }, [_vm._m(0), _c('FooterComponent')], 1)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  }, [_c('div', {
     staticClass: "box"
   }, [_c('div', {
     staticClass: "error"
@@ -20339,13 +20310,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "error__header"
   }, [_vm._v("The page is under contruction")]), _c('div', {
     staticClass: "error__text"
-  }, [_vm._v("We will notify you when it is done")]), _c('a', {
+  }, [_vm._v("We will notify you when it is done")]), _c('router-link', {
     staticClass: "error__link",
     attrs: {
-      "href": "/"
+      "to": "/"
     }
-  }, [_vm._v("Try to return to the main page")])])])
-}]}
+  }, [_vm._v("Try to return to the main page")])], 1)]), _c('FooterComponent')], 1)
+},staticRenderFns: []}
 
 /***/ }),
 /* 272 */
@@ -20622,8 +20593,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "page page_bg"
   }, [_c('div', {
@@ -20634,14 +20603,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "error"
   }, [_c('h1', {
     staticClass: "error__header"
-  }, [_vm._v("500")]), _c('div', {
-    staticClass: "error__text"
-  }, [_vm._v("Unfortunately something went wrong..."), _c('br'), _vm._v("But we are working on it")]), _c('a', {
+  }, [_vm._v("500")]), _vm._m(0), _c('router-link', {
     staticClass: "error__link",
     attrs: {
-      "href": "/"
+      "to": "/"
     }
-  }, [_vm._v("Try to return to the main page")])])])])])
+  }, [_vm._v("Try to return to the main page")])], 1)])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "error__text"
+  }, [_vm._v("Unfortunately something went wrong..."), _c('br'), _vm._v("But we are working on it")])
 }]}
 
 /***/ }),
@@ -21077,10 +21048,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('span', {
     staticClass: "comment__intro"
   }, [_vm._v("Linked tweets:")]), _vm._l((_vm.pinned), function(link) {
-    return _c('a', {
+    return _c('router-link', {
       staticClass: "comment__textlink",
       attrs: {
-        "href": ("https://twitter.com/" + (link.screen_name) + "/status/" + (link.id)),
+        "to": ("https://twitter.com/" + (link.screen_name) + "/status/" + (link.id)),
         "target": "_blank"
       }
     }, [_vm._v(_vm._s(link.text))])
@@ -21356,9 +21327,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "page page_bg"
-  }, [_vm._m(0), _c('FooterComponent')], 1)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  }, [_c('div', {
     staticClass: "box"
   }, [_c('div', {
     staticClass: "box__container"
@@ -21368,13 +21337,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "error__header"
   }, [_vm._v("The page is under contruction")]), _c('div', {
     staticClass: "error__text"
-  }, [_vm._v("We will notify you when it is done")]), _c('a', {
+  }, [_vm._v("We will notify you when it is done")]), _c('router-link', {
     staticClass: "error__link",
     attrs: {
-      "href": "/"
+      "to": "/"
     }
-  }, [_vm._v("Try to return to the main page")])])])])
-}]}
+  }, [_vm._v("Try to return to the main page")])], 1)])]), _c('FooterComponent')], 1)
+},staticRenderFns: []}
 
 /***/ }),
 /* 287 */
@@ -21398,19 +21367,19 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "welcome__title"
   }, [_vm._v("Tweettoapp")]), _c('div', {
     staticClass: "welcome__label"
-  }, [_vm._v("makes Twitter a better place")]), (!_vm.isLogged) ? _c('a', {
+  }, [_vm._v("makes Twitter a better place")]), (!_vm.isLogged) ? _c('router-link', {
     class: ['welcome__link', {
       'welcome__link_visible': _vm.isLinkVisible
     }],
     attrs: {
-      "href": _vm.loginLink
+      "to": _vm.loginLink
     }
-  }, [_vm._v("\n          Get started\n        ")]) : _c('a', {
+  }, [_vm._v("\n          Get started\n        ")]) : _c('router-link', {
     staticClass: "welcome__link welcome__link_visible",
     attrs: {
-      "href": "/"
+      "to": "/"
     }
-  }, [_vm._v("\n          Get started\n        ")])])])])])
+  }, [_vm._v("\n          Get started\n        ")])], 1)])])])
 },staticRenderFns: []}
 
 /***/ }),
@@ -21487,10 +21456,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('span', {
     staticClass: "comment__intro"
   }, [_vm._v("Linked tweets:")]), _vm._l((_vm.comment.pinned), function(link) {
-    return _c('a', {
+    return _c('router-link', {
       staticClass: "comment__textlink",
       attrs: {
-        "href": ("https://twitter.com/" + (_vm.comment.screen_name) + "/status/" + (link.id)),
+        "to": ("https://twitter.com/" + (_vm.comment.screen_name) + "/status/" + (link.id)),
         "target": "_blank"
       }
     }, [_vm._v(_vm._s(link.text))])
@@ -21498,10 +21467,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "comment__controls"
   }, [_c('div', {
     staticClass: "comment__socials"
-  }, [_c('a', {
+  }, [_c('router-link', {
     staticClass: "comment__smallbutton comment__smallbutton_twitter",
     attrs: {
-      "href": ("https://twitter.com/intent/tweet?text=" + _vm.linkText),
+      "to": ("https://twitter.com/intent/tweet?text=" + _vm.linkText),
       "target": "_blank"
     }
   }, [_c('img', {
@@ -21510,7 +21479,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "src": __webpack_require__(239),
       "alt": "Tweet it"
     }
-  })]), _vm._m(0)]), _c('div', {
+  })]), _c('router-link', {
+    staticClass: "comment__smallbutton comment__smallbutton_facebook",
+    attrs: {
+      "to": "https://www.facebook.com/sharer/sharer.php?u=https://abdogasim.github.io"
+    }
+  }, [_c('img', {
+    staticClass: "comment__trademark",
+    attrs: {
+      "src": __webpack_require__(224),
+      "alt": "Share on Facebook"
+    }
+  })])], 1), _c('div', {
     staticClass: "comment__editing"
   }, [_c('a', {
     staticClass: "comment__button comment__button_delete",
@@ -21556,20 +21536,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "comment": _vm.comment
     }
   })], 1)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('a', {
-    staticClass: "comment__smallbutton comment__smallbutton_facebook",
-    attrs: {
-      "href": "https://www.facebook.com/sharer/sharer.php?u=https://abdogasim.github.io"
-    }
-  }, [_c('img', {
-    staticClass: "comment__trademark",
-    attrs: {
-      "src": __webpack_require__(224),
-      "alt": "Share on Facebook"
-    }
-  })])
-}]}
+},staticRenderFns: []}
 
 /***/ }),
 /* 290 */
@@ -21601,31 +21568,29 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       'footer_dark': _vm.isDark,
       'footer_lowered': _vm.lowered
     }]
-  }, [_vm._m(0)])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  }, [_c('div', {
     staticClass: "footer__container"
   }, [_c('div', {
     staticClass: "footer__copyright"
   }, [_vm._v("\n      © 2017 Your logo\n    ")]), _c('div', {
     staticClass: "footer__links-container"
-  }, [_c('a', {
+  }, [_c('router-link', {
     staticClass: "footer__link",
     attrs: {
-      "href": "/terms"
+      "to": "/terms"
     }
-  }, [_vm._v("Terms and conditions")]), _c('a', {
+  }, [_vm._v("Terms and conditions")]), _c('router-link', {
     staticClass: "footer__link",
     attrs: {
-      "href": "/privacy"
+      "to": "/privacy"
     }
-  }, [_vm._v("Privacy")]), _c('a', {
+  }, [_vm._v("Privacy")]), _c('router-link', {
     staticClass: "footer__link",
     attrs: {
-      "href": "/contact"
+      "to": "/contact"
     }
-  }, [_vm._v("Contact us")])])])
-}]}
+  }, [_vm._v("Contact us")])], 1)])])
+},staticRenderFns: []}
 
 /***/ }),
 /* 292 */
@@ -21653,9 +21618,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "page page_bg"
-  }, [_vm._m(0), _c('FooterComponent')], 1)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  }, [_c('div', {
     staticClass: "box"
   }, [_c('div', {
     staticClass: "error"
@@ -21663,13 +21626,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "error__header"
   }, [_vm._v("The page is under contruction")]), _c('div', {
     staticClass: "error__text"
-  }, [_vm._v("We will notify you when it is done")]), _c('a', {
+  }, [_vm._v("We will notify you when it is done")]), _c('router-link', {
     staticClass: "error__link",
     attrs: {
-      "href": "/"
+      "to": "/"
     }
-  }, [_vm._v("Try to return to the main page")])])])
-}]}
+  }, [_vm._v("Try to return to the main page")])], 1)]), _c('FooterComponent')], 1)
+},staticRenderFns: []}
 
 /***/ }),
 /* 294 */
@@ -21825,17 +21788,17 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "src": __webpack_require__(229),
       "alt": "link"
     }
-  }), _c('a', {
+  }), _c('router-link', {
     staticClass: "card__pair-label",
     attrs: {
-      "href": _vm.user.entities.url.urls[0].url
+      "to": _vm.user.entities.url.urls[0].url
     }
-  }, [_vm._v(_vm._s(_vm.user.entities.url.urls[0].display_url))])]) : _vm._e(), _c('div', {
+  }, [_vm._v(_vm._s(_vm.user.entities.url.urls[0].display_url))])], 1) : _vm._e(), _c('div', {
     staticClass: "card__since"
-  }, [_vm._v("Joined " + _vm._s(_vm.joined))]), (_vm.needLink) ? _c('a', {
+  }, [_vm._v("Joined " + _vm._s(_vm.joined))]), (_vm.needLink) ? _c('router-link', {
     staticClass: "card__visit",
     attrs: {
-      "href": ("https://twitter.com/" + (_vm.user.screen_name))
+      "to": ("https://twitter.com/" + (_vm.user.screen_name))
     }
   }, [_c('img', {
     staticClass: "card__visit-icon",
@@ -21845,7 +21808,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _c('span', {
     staticClass: "card__visit-label"
-  }, [_vm._v("Visit my Twitter account")])]) : _vm._e()])]) : _vm._e()
+  }, [_vm._v("Visit my Twitter account")])]) : _vm._e()], 1)]) : _vm._e()
 },staticRenderFns: []}
 
 /***/ }),
@@ -22645,4 +22608,4 @@ webpackContext.id = 333;
 
 /***/ })
 ],[178]);
-//# sourceMappingURL=app.0fd120f93a850719d578.js.map
+//# sourceMappingURL=app.b7cb1d1026571afacf12.js.map
