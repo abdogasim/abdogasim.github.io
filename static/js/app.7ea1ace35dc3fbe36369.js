@@ -20138,10 +20138,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     class: ['dropdown', {
       'is-expanded': _vm.isDropdownExpanded
     }]
-  }, [_c('router-link', {
+  }, [_c('a', {
     staticClass: "dropdown__toggler",
     attrs: {
-      "to": "javascript:;"
+      "href": "javascript:;"
     },
     on: {
       "click": _vm.expandDropdown
@@ -20197,7 +20197,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('span', {
     staticClass: "menu__title"
-  }, [_vm._v("Logout")])])], 1)])])], 1)])])])])])])])
+  }, [_vm._v("Logout")])])], 1)])])])])])])])])])])
 },staticRenderFns: []}
 
 /***/ }),
@@ -22608,4 +22608,4 @@ webpackContext.id = 333;
 
 /***/ })
 ],[178]);
-//# sourceMappingURL=app.b7cb1d1026571afacf12.js.map
+//# sourceMappingURL=app.7ea1ace35dc3fbe36369.js.map
