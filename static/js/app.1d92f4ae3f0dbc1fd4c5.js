@@ -18124,7 +18124,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     FooterComponent: __WEBPACK_IMPORTED_MODULE_2__components_FooterComponent___default.a
   },
 
-  beforeRouteEnter() {
+  beforeRouteEnter(to, from, next) {
     const hasQuery = window.location.href.split('?').length > 1;
 
     if (hasQuery) {
@@ -22618,4 +22618,4 @@ webpackContext.id = 333;
 
 /***/ })
 ],[178]);
-//# sourceMappingURL=app.8d6024e8f413d3ba0a71.js.map
+//# sourceMappingURL=app.1d92f4ae3f0dbc1fd4c5.js.map
