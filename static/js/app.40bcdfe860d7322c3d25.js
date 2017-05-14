@@ -18012,8 +18012,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
           return this.$store.dispatch('saveAuth', { token, secret });
         }).then(() => {
-          this.$route.query = '';
-
           return this.$store.dispatch('saveUser', user);
         }).then(() => {
           const data = {
@@ -18124,6 +18122,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     HeaderComponent: __WEBPACK_IMPORTED_MODULE_0__components_HeaderComponent___default.a,
     SearchComponent: __WEBPACK_IMPORTED_MODULE_1__components_SearchComponent___default.a,
     FooterComponent: __WEBPACK_IMPORTED_MODULE_2__components_FooterComponent___default.a
+  },
+
+  beforeRouteEnter() {
+    const hasQuery = window.location.href.split('?').length > 1;
+
+    if (hasQuery) {
+      window.location.href = 'https://abdogasim.github.io/#/';
+    }
   }
 });
 
@@ -22610,4 +22616,4 @@ webpackContext.id = 333;
 
 /***/ })
 ],[178]);
-//# sourceMappingURL=app.35c4b0e5918cd8207569.js.map
+//# sourceMappingURL=app.40bcdfe860d7322c3d25.js.map
