@@ -21442,7 +21442,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('img', {
     staticClass: "comment__image",
     attrs: {
-      "src": _vm.comment.user.profile_image_url,
+      "src": _vm.comment.user.profile_image_url_https,
       "alt": _vm.comment.user.name
     }
   }), _c('span', {
@@ -22616,4 +22616,4 @@ webpackContext.id = 333;
 
 /***/ })
 ],[178]);
-//# sourceMappingURL=app.40bcdfe860d7322c3d25.js.map
+//# sourceMappingURL=app.5ac2800c7436c6896ad3.js.map
