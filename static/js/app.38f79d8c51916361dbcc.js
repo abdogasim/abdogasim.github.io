@@ -18175,8 +18175,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     const hasQuery = window.location.href.split('?').length > 1;
 
     if (hasQuery) {
-      window.location.href = 'http://127.0.0.1:8080/#/';
-      // window.location.href = 'https://abdogasim.github.io/#/';
+      // window.location.href = 'http://127.0.0.1:8080/#/';
+      window.location.href = 'https://abdogasim.github.io/#/';
     }
 
     next();
@@ -22670,4 +22670,4 @@ webpackContext.id = 332;
 
 /***/ })
 ],[179]);
-//# sourceMappingURL=app.8d761fe580cdca1aa960.js.map
+//# sourceMappingURL=app.38f79d8c51916361dbcc.js.map
