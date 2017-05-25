@@ -21153,7 +21153,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "alt": _vm.user.screen_name
     }
   })]), _c('div', {
-    staticClass: "package"
+    staticClass: "package package_colored"
   }, [_c('div', {
     staticClass: "package__side"
   }, [_c('CardComponent', {
@@ -22670,4 +22670,4 @@ webpackContext.id = 332;
 
 /***/ })
 ],[179]);
-//# sourceMappingURL=app.38f79d8c51916361dbcc.js.map
+//# sourceMappingURL=app.30c262b1bea6d06f6ec9.js.map
